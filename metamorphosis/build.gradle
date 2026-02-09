@@ -6,7 +6,7 @@ plugins {
 
 group = 'op.production'
 version = '0.0.1-SNAPSHOT'
-description = 'Demo project for Spring Boot'
+description = 'Java (coffee) + Kafka, served hot'
 
 java {
 	toolchain {
@@ -26,6 +26,7 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-kafka'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.apache.kafka:kafka-streams'
